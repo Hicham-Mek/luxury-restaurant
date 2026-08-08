@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+/* Custom theme */
+@theme {
+  --color-luxury-gold: #D4AF37;
+  --color-charcoal: #121212;
+  --color-deep-charcoal: #0A0A0A;
+
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Montserrat", sans-serif;
+}
+/* Utilities */
+@layer utilities {
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #D4AF37, #F4D03F);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .divider-thin {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #D4AF37, transparent);
+  }
+}
